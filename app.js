@@ -8,10 +8,9 @@ const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-//mongodb+srv://HNG_1:HNG1234@hng.9a3ndke.mongodb.net/HNG?retryWrites=true&w=majority
 
 // Connect to MongoDB (you'll need to replace 'your_db_url' with your actual MongoDB URL)
-mongoose.connect('mongodb+srv://bernard:12345@hng5.jebucrl.mongodb.net/HNG_5?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://bernar:12345@hng5.jebucrl.mongodb.net/HNG_5?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
