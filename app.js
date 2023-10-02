@@ -52,26 +52,6 @@ app.post('/upload', upload.single('video'), async (req, res) => {
 
 // Create an endpoint to play a video
 
-// app.get('/play/:url', async (req, res) => {
-//   const { url } = req.params;
-
-//   try {
-//     // Find the video in the 'uploads' directory based on the URL
-//     const videoFiles = fs.readdirSync('./uploads');
-//     const matchingFile = videoFiles.find(file => path.basename(file, path.extname(file)) === url);
-
-//     if (!matchingFile) {
-//       return res.status(404).json({ message: 'Video not found' });
-//     }
-
-//     const videoPath = path.join(__dirname, 'uploads', matchingFile);
-//     res.sendFile(videoPath);
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).json({ message: 'Server error' });
-//   }
-// });
-
 
 
 app.get('/play/:id', async (req, res) => {
